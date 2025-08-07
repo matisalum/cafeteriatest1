@@ -1,0 +1,266 @@
+#bienvenida {
+  background-image: 
+    linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+    url('salon2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 4rem 2rem;
+  border-radius: 8px;
+}
+
+#granos {
+    background-image: 
+    linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+    url('granos.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 4rem 2rem;
+  border-radius: 8px;
+  }
+
+/* --- Estilos generales y tipografía --- */
+body {
+    font-family: Arial, sans-serif; /* Puedes cambiar esta fuente */
+    margin: 0;
+    line-height: 1.6;
+    background-color: #f4f2e7; /* Un color crema suave para el fondo */
+    color: #4a3e30; /* Un marrón oscuro para el texto */
+}
+
+h1, h2, h3 {
+    font-family: 'Georgia', serif; /* Una fuente con serifa para los títulos */
+    color: white;
+    text-align: center;
+}
+p {
+
+    text-align: center;
+}
+
+/* --- Estilos del encabezado (header) --- */
+header {
+    background-color: #795548; /* Un marrón más oscuro para el encabezado */
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Transición suave para el efecto hover */
+}
+
+nav a:hover {
+    color: #ffcc80; /* Cambia de color cuando el mouse pasa por encima */
+}
+
+/* --- Estilos de las secciones --- */
+section {
+    padding: 2rem;
+    margin: 1rem auto;
+    max-width: auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 8px;
+}
+
+.contactos{
+    background-color: lightblue;
+}
+/* --- Estilos del pie de página (footer) --- */
+footer {
+    background-color: #4a3e30;
+    color: black;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+footer a {
+    color: #ffcc80;
+    text-decoration: none;
+}
+/* --- Estilos para la sección del Menú --- */
+.menu-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan a la siguiente línea */
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+    gap: 2rem; /* Espacio entre las tarjetas */
+}
+
+.menu-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    width: 300px; /* Ancho fijo para cada tarjeta */
+    text-align: center;
+}
+
+.menu-item img {
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.menu-item h3 {
+    margin-top: 0;
+    color: #2c2117;
+}
+
+.menu-item .precio {
+    font-weight: bold;
+    color: #795548;
+    font-size: 1.2rem;
+}
+
+/* --- Estilos para los íconos de redes sociales --- */
+.redes-sociales {
+    margin-top: 1rem;
+}
+
+.redes-sociales a {
+    color: red; /* Color de los íconos */
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.redes-sociales a:hover {
+    color: #ffcc80; /* Cambia de color al pasar el mouse */
+}
+
+@keyframes slide {
+  0%   { margin-left: 0; }
+  20%  { margin-left: 0; }
+
+  25%  { margin-left: -100%; }
+  45%  { margin-left: -100%; }
+
+  50%  { margin-left: -200%; }
+  70%  { margin-left: -200%; }
+
+  75%  { margin-left: 0; }
+  100% { margin-left: 0; }
+}
+
+
+
+.carrusel {
+    width: 100%;
+    max-width: 900px;
+    margin: 50px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.carrusel ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    animation: slide 20s infinite ease-in-out;
+}
+
+.carrusel li {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.carrusel img {
+    width: auto;
+    max-height: 400px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.menu-carrusel {
+  width: 100%;
+  max-width: 900px;
+  margin: 2rem auto;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.menu-carrusel ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  width: 100%; /* 100% * cantidad de elementos */
+  animation: slide 18s infinite ease-in-out;
+}
+
+.menu-carrusel li {
+  flex: 0 0 100%; /* Cada ítem ocupa 100% del carrusel visible */
+  list-style: none;
+  padding: 2rem;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: white;
+}
+
+.menu-carrusel img {
+  width: 90%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.menu-carrusel h3 {
+  margin: 0.5rem 0;
+  color: #2c2117;
+}
+
+.menu-carrusel .precio {
+  font-weight: bold;
+  color: #795548;
+  font-size: 1.2rem;
+}
+
+.mapa {
+  max-width: 800px;
+  margin: 1rem auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
